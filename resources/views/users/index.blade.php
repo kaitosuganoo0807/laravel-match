@@ -17,11 +17,11 @@
           <div class="matchingPerson_img"><img src="/storage/images/{{ $user->img_name}}"></div>
             <div class="mathingPerson_name">{{ $user->name }}</div>
             
-            {{--<form action="{{ route('chat.show') }}" method="POST">
+            <form action="{{ route('chat.show') }}" method="POST">
             @csrf
               <input name="user_id" type="hidden" value="{{ $user->id }}">
               <button type="submit" class="chatForm_btn">チャットを開く</button>
-            </form> --}}
+            </form>
           </div>
         @endforeach
       </div>
